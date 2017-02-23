@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 4f662abb09d0ec24494056b33b2e6f84
+timeCreated: 1454977301
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Body_1:Group2
+    100002: Eyes_1:Group16240
+    100004: //RootNode
+    100006: Flowers1_1:Group32177
+    100008: Flowers2_2:Group32164
+    100010: Flowers3_1:Group15908
+    100012: Flowers_2:Group32188
+    100014: Group32159
+    100016: Group32577
+    100018: Group7
+    100020: Head_1:Group11
+    100022: Leaf_1:Group8
+    100024: Leafstem_1:Group8
+    100026: Legs1_1:Group7
+    100028: polySurface31
+    400000: Body_1:Group2
+    400002: Eyes_1:Group16240
+    400004: //RootNode
+    400006: Flowers1_1:Group32177
+    400008: Flowers2_2:Group32164
+    400010: Flowers3_1:Group15908
+    400012: Flowers_2:Group32188
+    400014: Group32159
+    400016: Group32577
+    400018: Group7
+    400020: Head_1:Group11
+    400022: Leaf_1:Group8
+    400024: Leafstem_1:Group8
+    400026: Legs1_1:Group7
+    400028: polySurface31
+    2300000: Body_1:Group2
+    2300002: Eyes_1:Group16240
+    2300004: Flowers1_1:Group32177
+    2300006: Flowers2_2:Group32164
+    2300008: Flowers3_1:Group15908
+    2300010: Flowers_2:Group32188
+    2300012: Group32159
+    2300014: Group32577
+    2300016: Group7
+    2300018: Head_1:Group11
+    2300020: Leaf_1:Group8
+    2300022: Leafstem_1:Group8
+    2300024: Legs1_1:Group7
+    2300026: polySurface31
+    3300000: Body_1:Group2
+    3300002: Eyes_1:Group16240
+    3300004: Flowers1_1:Group32177
+    3300006: Flowers2_2:Group32164
+    3300008: Flowers3_1:Group15908
+    3300010: Flowers_2:Group32188
+    3300012: Group32159
+    3300014: Group32577
+    3300016: Group7
+    3300018: Head_1:Group11
+    3300020: Leaf_1:Group8
+    3300022: Leafstem_1:Group8
+    3300024: Legs1_1:Group7
+    3300026: polySurface31
+    4300000: Body_1:Group2
+    4300002: Flowers3_1:Group15908
+    4300004: Flowers2_2:Group32164
+    4300006: Flowers_2:Group32188
+    4300008: Flowers1_1:Group32177
+    4300010: Head_1:Group11
+    4300012: Leaf_1:Group8
+    4300014: Leafstem_1:Group8
+    4300016: Eyes_1:Group16240
+    4300018: Legs1_1:Group7
+    4300020: polySurface31
+    4300022: Group7
+    4300024: Group32159
+    4300026: Group32577
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 20
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
