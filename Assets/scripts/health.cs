@@ -6,6 +6,76 @@ public class health : MonoBehaviour
 {
 
     public Text HealthText;
+    public int HealthValue = MaxHealth;
+    public const int MaxHealth = 5;
+    public int CurrentHealth = MaxHealth;
+    public bool takedmg, heal;          //bools that tell you if you take damage or heal
+    public bool isDead = false;             //you're not dead yet so it's automatically false
+
+    void Update()
+    {
+
+        if (HealthValue >= 5)
+        {
+
+            HealthValue = 5;
+            HealthText.text = "" + HealthValue;
+        }
+
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+
+        if (other.tag == "healthPickup")
+        {
+
+            HealthValue += 1;
+            Destroy(other.gameObject);
+            HealthText.text = "" + HealthValue;
+
+        }
+
+        if (other.tag == "Enemy")
+        {
+            TakeDamage(1);
+            HealthValue -= 1;
+            HealthText.text = "" + HealthValue;
+            Destroy(other.gameObject);
+
+        }
+
+    }
+
+    public void TakeDamage(int amount)
+    {
+        CurrentHealth -= amount;
+
+        // _DaSprite[healthInt].SetActive(false);
+        //healthInt += 1;
+        //takedmg = false;
+
+        if (CurrentHealth <= 0)
+        {
+            //_DaSprite[4].SetActive(false);
+            // _DaSprite[5].SetActive(false);
+            CurrentHealth = 0;
+            isDead = true;
+            Dead();
+            //this.gameObject.SetActive(false);
+            //Application.LoadLevel(Application.loadedLevel);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
+
+    void Dead()
+    {
+        if (isDead == true)
+        {
+            this.gameObject.SetActive(false);
+            Debug.Log("you died");
+        }
+    }
 
     //public Image
 
@@ -15,7 +85,7 @@ public class health : MonoBehaviour
     //public int healthInt;               //acts as the element of the array that you're currently on
 
 
-    //public const int maxHealth = 100;       //your max health
+    // public const int maxHealth = HealhValue;       //your max health
     //public int currentHealth = maxHealth;   //your curren health = your max health
     //public bool isDead = false;             //you're not dead yet so it's automatically false
     //public bool mHealth;                    //Your main health bool
@@ -36,7 +106,7 @@ public class health : MonoBehaviour
     //        mHealth = true;
 
     //    }
-        
+
 
     //}
 
@@ -84,24 +154,7 @@ public class health : MonoBehaviour
     //    }
     //}
 
-    //public void TakeDamage(int amount)
-    //{
-    //    currentHealth -= amount;
 
-    //    _DaSprite[healthInt].SetActive(false);
-    //    healthInt += 1;
-    //    takedmg = false;
-
-    //    if (currentHealth <= 0)
-    //    {
-    //        //_DaSprite[4].SetActive(false);
-    //        //_DaSprite[5].SetActive(false);
-    //        currentHealth = 0;
-    //        //isDead = true;
-    //        this.gameObject.SetActive(false);
-    //        //Application.LoadLevel(Application.loadedLevel);
-    //        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    //    }
 
 
 
@@ -124,18 +177,11 @@ public class health : MonoBehaviour
     //        Debug.Log("you're at max health!");
 
     //    }
-        
+
 
     //}
 
-    //void Dead()
-    //{
-    //    if (isDead == true)
-    //    {
-    //        this.gameObject.SetActive(false);
-    //        Debug.Log("you died");
-    //    }
-    //}
+
 
 
 }
